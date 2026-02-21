@@ -8,7 +8,7 @@
 
 ### View On GitHub
 
-**👉 [View Live Presentation](https://rfay.github.io/git-worktree-ddev//)**
+**👉 [View Live Presentation](https://rfay.github.io/git-worktree-ddev/)**
 
 ## 📚 Resources
 

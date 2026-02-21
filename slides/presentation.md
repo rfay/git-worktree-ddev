@@ -3,6 +3,8 @@
 
 <img src="images/ddev-logo.svg" alt="DDEV Logo" class="ddev-logo">
 
+[Presentation](https://rfay.github.io/git-worktree-ddev/)
+
 ---
 
 ## Check out Multiple Versions of a Repo
@@ -67,3 +69,4 @@ git worktree remove <name>
 * Consider `ddev config global --omit-project-name-by-default`
 * `git worktree add <path>`
 * Load a database and/or files into the alternate project
+* [Presentation](https://rfay.github.io/git-worktree-ddev/)
