@@ -1,8 +1,12 @@
 # Git Worktree for Multiple Versions of Site at Same Time
 
-This repository contains a presentation built with [reveal.js](https://revealjs.com/).
-
 ## 🎯 View the Presentation
+
+### 🎯 Run Locally
+
+`npx live-server`
+
+### View On GitHub
 
 **👉 [View Live Presentation](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)**
 
