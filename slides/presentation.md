@@ -1,4 +1,4 @@
-# **Git Worktree for Multiple Versions of Same DDEV Proje ct**
+# **Git Worktree for Multiple Versions of Same DDEV Project**
 ### with
 
 <img src="images/ddev-logo.svg" alt="DDEV Logo" class="ddev-logo">
@@ -18,7 +18,7 @@ In `site1`, `https://site1.ddev.site`
 
 ---
 
-## You can Default This behavior with DDEV
+## You can default this behavior with DDEV
 
 `ddev config global --omit-project-name-by-default`
 
@@ -32,7 +32,7 @@ ddev export-db --file=.tarballs/db.sql.gz
 tar -C web/sites/default/files -czf .tarballs/files.tgz .
 ```
 
---- 
+---
 
 ## `git worktree` lets you do this with projects that share `.git`
 
@@ -46,6 +46,7 @@ ddev start
 ddev import-db --file=~/workspace/d11simple/.tarballs/db.sql.gz
 ddev import-files --source=~/workspace/d11simple/.tarballs/files.tgz
 ```
+
 ---
 
 ## Remember the tools
@@ -58,9 +59,11 @@ git worktree list
 git worktree remove <name>
 ```
 
+---
+
 ## Summary
 
-* Remove `name` from your project's `.ddev/config.yaml` and the project takes the name of directory it's in
+* Remove `name` from your project's `.ddev/config.yaml` and the project takes the name of directory it lives in
 * Consider `ddev config global --omit-project-name-by-default`
 * `git worktree add <path>`
 * Load a database and/or files into the alternate project
