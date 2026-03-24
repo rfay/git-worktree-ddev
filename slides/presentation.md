@@ -9,6 +9,7 @@ Presentation is at https://rfay.github.io/git-worktree-ddev/
 
 ## Check out Multiple Versions of a Repo
 
+* `mkdir d11simple && cd d11simple`
 * `git clone git@github.com:ddev/d11simple site1`
 * `git clone git@github.com:ddev/d11simple site2`
 
@@ -38,15 +39,25 @@ tar -C web/sites/default/files -czf .tarballs/files.tgz .
 
 ## `git worktree` lets you do this with projects that share `.git`
 
-`git worktree add ~/tmp/site3`
+In ~/workspace/D11SIMPLE:
 
-Automatically creates a checkout with the branch name `site3`
+git clone git@github.com:ddev/d11simple
+cd d11simple
+git worktree add ../fancy-feature-1
+git worktree add ../fancy-feature-2
+```
+
+Automatically creates a checkout with the branch name `fancy-feature-1`
+
+---
+
+## Import your db and files
 
 ```
-cd ~/tmp/site3
+cd fancy-feature-1
 ddev start
-ddev import-db --file=~/workspace/d11simple/.tarballs/db.sql.gz
-ddev import-files --source=~/workspace/d11simple/.tarballs/files.tgz
+ddev import-db --file=../.tarballs/db.sql.gz
+ddev import-files --source=../.tarballs/files.tgz
 ```
 
 ---
@@ -56,7 +67,7 @@ ddev import-files --source=~/workspace/d11simple/.tarballs/files.tgz
 `git worktree` shows you the options, but
 
 ```
-git worktree add <path> 
+git worktree add <path>  # Usually relative
 git worktree list
 git worktree remove <name>
 ```
