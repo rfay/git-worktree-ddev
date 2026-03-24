@@ -9,15 +9,16 @@ Presentation is at https://rfay.github.io/git-worktree-ddev/
 
 ## Check out Multiple Versions of a Repo
 
-* `mkdir d11simple && cd d11simple`
-* `git clone git@github.com:ddev/d11simple site1`
-* `git clone git@github.com:ddev/d11simple site2`
+```
+git clone git@github.com:ddev/d11simple fancy-feature-1
+git clone git@github.com:ddev/d11simple fancy-feature-2
+```
 
 ---
 
 ## Without `name` Every DDEV Project Has Name of directory
 
-In `site1`, `https://site1.ddev.site`
+In `fancy-feature-1`, `https://fancy-feature-1.ddev.site`
 
 ---
 
@@ -47,7 +48,7 @@ git worktree add ../fancy-feature-1
 git worktree add ../fancy-feature-2
 ```
 
-Automatically creates a checkout with the branch name `fancy-feature-1`
+Automatically creates a checkout with the branch name `fancy-feature-1` or `fancy-feature-2` that matches the directory name.
 
 ---
 
