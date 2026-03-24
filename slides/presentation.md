@@ -55,6 +55,17 @@ Automatically creates a checkout with the branch name `fancy-feature-1` or `fanc
 
 ---
 
+## Sample Layout
+
+```
+D11SIMPLE/
+├── d11simple
+├── fancy-feature-1
+└── fancy-feature-2
+```
+
+---
+
 ## Import your db and files
 
 ```
