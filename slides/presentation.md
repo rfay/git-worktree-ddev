@@ -9,9 +9,10 @@ Presentation is at https://rfay.github.io/git-worktree-ddev/
 
 ## Check out Multiple Versions of a Repo
 
-```
-git clone git@github.com:ddev/d11simple fancy-feature-1
-git clone git@github.com:ddev/d11simple fancy-feature-2
+
+`git clone git@github.com:ddev/d11simple fancy-feature-1`
+
+`git clone git@github.com:ddev/d11simple fancy-feature-2`
 ```
 
 ---
@@ -33,15 +34,17 @@ In `fancy-feature-1`, `https://fancy-feature-1.ddev.site`
 ```
 mkdir .tarballs
 ddev export-db --file=.tarballs/db.sql.gz
-tar -C web/sites/default/files -czf .tarballs/files.tgz .
 ```
+
+`tar -C web/sites/default/files -czf .tarballs/files.tgz .`
 
 ---
 
 ## `git worktree` lets you do this with projects that share `.git`
 
-In ~/workspace/D11SIMPLE:
+In `~/workspace/D11SIMPLE`:
 
+```bash
 git clone git@github.com:ddev/d11simple
 cd d11simple
 git worktree add ../fancy-feature-1
